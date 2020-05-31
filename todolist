@@ -2,9 +2,15 @@ let todos = ["item 1", "item 2", "item 3"];
 
 function addTodo(x) {
     todos.push(x);
-    displayTodos;
+    displayTodos();
 }
 
 function changeTodo(position, newValue) {
     todos[position] = newValue;
+    displayTodos();
+}
+
+funtion deleteTodo (position) {
+    todos.splice(position, 1);
+    displayTodos();
 }
