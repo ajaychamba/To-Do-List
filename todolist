@@ -1,0 +1,9 @@
+let todos = ["item 1", "item 2", "item 3"];
+
+function addTodo(x) {
+    todos.push(x);
+    displayTodos;
+}
+
+function changeTodo(position, newValue) {
+    todos[position] = newValue;
