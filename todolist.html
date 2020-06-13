@@ -7,11 +7,35 @@
 
   <body>
     <h1>Todo List</h1>
-    <button id="displayTodosButton">Display Todos</button>
-    <button id="toggleAllButton">Toggle All</button>
 
-    <button onclick="handlers.displayTodos()">Display Todos</button>      // run handlers object on click
+  <div>    
     <button onclick="handlers.toggleAll()">Toggle All</button>
+  </div>
+
+  <div>
+    <button onclick="handlers.addTodo()">Add Item</button>
+    <input id="addItem" type="text">
+  </div>
+
+  <div>
+    <button onclick="handlers.changeTodo()">Change Item</button>
+    <input id="changeTodoPositionInput" type="number">
+    <input id="changeTodoTextInput" type="text">
+  </div>
+
+  <div>
+    <button onclick="handlers.deleteTodo()">Delete Item</button>
+    <input id="deleteTodoPositionInput" type="number">
+  </div>
+
+  <div>
+    <button onclick="handlers.toggleTodo">Toggle Completed</button>
+    <input id="toggleCompletedPositionInput" type="number">
+  </div>
+
+  <ul>
+
+  </ul>
 
 
     <script src="todolist.js"></script>
